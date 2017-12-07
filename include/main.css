@@ -292,7 +292,9 @@ button {
 .data .circle {
     padding: 5px;
 }
-
+.desc {
+    padding: 2em;
+}
 .skills {
     border-style: solid;
     border-width: 0 0 20px 0;

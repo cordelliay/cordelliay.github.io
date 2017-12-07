@@ -1,0 +1,379 @@
+@font-face {
+    font-family: 'Battling';
+    src: url("fonts/Battling1NPmed.otf") format("opentype");
+}
+
+body {
+    background: #F6F3EB;
+    margin: 0;
+}
+
+main {
+    margin: 5px auto 5px auto;
+    padding: 10vh;
+    height: 80vh;
+    min-height: 500px;
+    width: 45vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 2fr 25px 0fr 25px 0fr 25px 0fr 25px 2fr;
+    grid-template-rows: 2fr 25px 0fr 25px 0fr 25px 0fr 25px 2fr;
+    -ms-grid-columns: 25px 1fr 25px 1fr 50px;
+    grid-template-columns: 25px 1fr 25px 1fr 50px;
+    grid-gap: 0px;
+}
+
+sup {
+    font-size: 4.5vw;
+    line-height: 0.5;
+    border-bottom: 0.3em solid;
+    color: #233237;
+}
+
+h1 {
+    grid-row: 3 / 8;
+    grid-column: 1 / -1;
+}
+
+h1,
+h2 {
+    font-family: Battling, Helvetica, serif;
+    text-transform: uppercase;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    display: block;
+    margin: 0.14em 0 0 0;
+    line-height: 0.8;
+    font-size: 6em;
+}
+
+h3 {
+    font-family: Helvetica, san-serif;
+    text-transform: uppercase;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    display: block;
+    font-size: 1.5em;
+    line-height: 0.8;
+}
+
+p,
+li {
+    font-family: Helvetica, san-serif;
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px auto;
+}
+
+textarea {
+    padding: 12px;
+    height: 200px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+button {
+    padding: 12px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #F6F3EB;
+    border-radius: 0;
+    font-family: Battling, Helvetica, serif;
+    color: #c13d2e;
+    text-transform: uppercase;
+}
+
+.main h1 h2 {
+    font-size: 9.29vw;
+}
+
+.part1 {
+    color: #233237;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    font-size: 8.7vw;
+}
+
+.part2 {
+    color: #233237;
+    -ms-grid-row: 7;
+    grid-row: 7;
+    font-size: 12vw;
+}
+
+.part3 {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    color: #8E8D8A;
+    font-size: 9.6vw;
+    grid-row: 5 / 6;
+    grid-column: 1 / -1;
+}
+
+.rect {
+    background: #c13d2e;
+}
+
+.rect1 {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+}
+
+.rect2 {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 3;
+    grid-column: 3;
+}
+
+.rect3 {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    grid-column: 1 / -1;
+}
+
+.rect4 {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    grid-column: 1 / -1;
+}
+
+.rect5 {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    grid-column: 1 / -1;
+}
+
+.rect6 {
+    -ms-grid-row: 8;
+    grid-row: 8;
+    -ms-grid-column: 1 / -1;
+    grid-column: 1 / -1;
+}
+
+.rect7 {
+    -ms-grid-row: 9;
+    grid-row: 9;
+    -ms-grid-column: 3;
+    grid-column: 3;
+}
+
+.circle1 {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 5;
+    grid-column: 5;
+}
+
+.circle2 {
+    -ms-grid-row: 9;
+    grid-row: 9;
+    -ms-grid-column: 5;
+    grid-column: 5;
+    -ms-flex-item-align: self-end;
+    -ms-grid-row-align: self-end;
+    align-self: self-end;
+}
+.upper{
+    text-transform: uppercase;
+}
+.contain {
+    margin: auto;
+    max-width: 800px;
+}
+
+.highlight {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.dark {
+    background: #233237;
+}
+
+.dark .contain {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.dark .highlight {
+    color: #F6F3EB;
+}
+
+.dark h2 {
+    color: #F6F3EB;
+    font-size: 6em;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.dark p {
+    color: #8E8D8A;
+    margin-left: auto;
+    max-width: 400px;
+    padding: 2em;
+    text-align: justify;
+}
+
+.next {
+    background-color: #8E8D8A;
+    color: #F6F3EB;
+    text-align: right;
+}
+.apps {    
+    padding: 40px;
+    text-align: left;
+}
+.details {
+    padding: 20px 0;
+}
+
+.details p, h4{
+    margin-left: 15px;
+}
+
+.apps h3 {
+    margin: 0;
+}
+.next .contain {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.next .highlight {
+    color: #233237;
+    text-transform: uppercase;
+}
+
+
+
+.data .contain {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.data .highlight {
+    color: #c13d2e;
+    text-transform: uppercase;
+}
+
+.data p {
+    color: #8E8D8A;
+
+}
+
+.data .desc {
+    max-width: 400px;
+    text-align: justify;
+}
+
+.data .circle {
+    padding: 5px;
+}
+
+.skills {
+    border-style: solid;
+    border-width: 0 0 20px 0;
+    border-color: #c13d2e;
+    color: #233237;
+    text-align: center;
+    margin: auto;
+    width: 18em;
+}
+
+.skill {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.skill h3 {
+    color: #233237;
+}
+
+.skill li {
+    text-align: left;
+}
+
+.mode1,
+.mode2 {
+    color: #8E8D8A;
+    text-align: center;
+    width: 180px;
+}
+
+.on .path-vert {
+    -webkit-animation: draw1 5s linear alternate;
+    animation: draw1 5s linear alternate;
+    stroke-dasharray: 1000;
+}
+
+#formview {
+    max-width: 400px;
+    text-align: center;
+    margin: 20px;
+}
+
+@-webkit-keyframes draw1 {
+    from {
+        stroke-dashoffset: 1200;
+    }
+    to {
+        stroke-dashoffset: 600;
+    }
+}
+
+@keyframes draw1 {
+    from {
+        stroke-dashoffset: 1200;
+    }
+    to {
+        stroke-dashoffset: 600;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .data h2 {
+        font-weight: 700;
+        color: #c13d2e;
+        font-size: 16vh;
+    }
+    .hide {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 426px) {
+    .data h2 {
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        font-weight: 700;
+        color: #c13d2e;
+        font-size: 16vh;
+    }
+}

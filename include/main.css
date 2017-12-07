@@ -182,9 +182,11 @@ button {
     -ms-grid-row-align: self-end;
     align-self: self-end;
 }
-.upper{
+
+.upper {
     text-transform: uppercase;
 }
+
 .contain {
     margin: auto;
     max-width: 800px;
@@ -238,21 +240,25 @@ button {
     color: #F6F3EB;
     text-align: right;
 }
-.apps {    
+
+.apps {
     padding: 40px;
     text-align: left;
 }
+
 .details {
     padding: 20px 0;
 }
 
-.details p, h4{
+.details p,
+h4 {
     margin-left: 15px;
 }
 
 .apps h3 {
     margin: 0;
 }
+
 .next .contain {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -281,7 +287,6 @@ button {
 
 .data p {
     color: #8E8D8A;
-
 }
 
 .data .desc {
@@ -292,9 +297,11 @@ button {
 .data .circle {
     padding: 5px;
 }
+
 .desc {
     padding: 2em;
 }
+
 .skills {
     border-style: solid;
     border-width: 0 0 20px 0;

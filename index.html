@@ -1,141 +1,253 @@
 <!doctype html>
-<html>
+<html class="no-js" lang="en">
 
 <head>
-    <meta name="referrer" content="origin">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Cordellia</title>
     <meta name="description" content="Hire this chick for all the interwebs things.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="include/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="include/main.css?5">
 </head>
 
-<body>
-    <main>
-        <h1 class="part1">Cordellia</h1>
-        <h1 class="part2">Yokum</h1>
-        <h2 class="part3">Web<sup>&</sup>Data</h2>
-        <div class="rect rect1"></div>
-        <div class="rect rect2"></div>
-        <div class="rect rect3"></div>
-        <div class="rect rect4"></div>
-        <div class="rect rect5"></div>
-        <div class="rect rect6"></div>
-        <div class="rect rect7"></div>
-        <div class="circle1">
-            <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="25" cy="25" r="25" stroke="transparent" fill="#c13d2e" />
-            </svg>
-        </div>
-        <div class="circle2">
-            <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="25" cy="25" r="25" stroke="transparent" fill="#c13d2e" />
-            </svg>
+<body data-aos="fade" data-aos-duration="300">
+    <main id="pin_container">
+        <section class="panel feature bg-black">
+            <div class="feature-grid">
+                <h1 class="feature-heading feature-part1" data-aos="fade" data-aos-delay="100" data-aos-duration="1000">Cordellia</h1>
+                <h1 class="feature-heading feature-part2" data-aos="fade" data-aos-delay="500" data-aos-duration="1000">Yokum</h1>
+                <h2 class="feature-part3" data-aos="fade" data-aos-delay="1000" data-aos-duration="1000">Web<sup>&</sup>Data</h2>
+                <div class="bg-accent feature-rect1"></div>
+                <div class="bg-accent feature-rect2"></div>
+                <div class="bg-accent feature-rect3 ease-across"></div>
+                <div class="bg-accent feature-rect4 ease-across"></div>
+                <div class="bg-accent feature-rect5 ease-across"></div>
+                <div class="bg-accent feature-rect6 ease-across"></div>
+                <div class="bg-accent feature-rect7 ease-down"></div>
+                <div class="feature-circle1">
+                    <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" stroke="transparent" fill="var(--accent-color)" />
+                    </svg>
+                </div>
+                <div class="feature-circle2">
+                    <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" stroke="transparent" fill="var(--accent-color)" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <div id="second">
+            <section class="about panel bg-main-feature-color">
+                <div class="contain flex">
+                    <div class="about-wrap fade--feature-color">
+                        <h2 class="heading sticky" data-aos="fade" data-aos-duration="400">ABOUT</h2>
+                        <div class="info-wrapper flex" data-aos="fade" data-aos-duration="400">
+                            <i class="info info-icon fas fa-map-marker-alt"></i>
+                            <div class="info-label">Location: <span class="info-detail">Baltimore, MD</span></div>
+                        </div>
+                        <div class="info-wrapper flex" data-aos="fade" data-aos-duration="400">
+                            <i class="info info-icon fas fa-briefcase"></i>
+                            <div class="info-label">Job: <span class="info-detail">QA Manager | Fastspot</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-accent divider-vert-detached"></div>
+                    <div class="about-contents" data-aos="up-crazy" data-aos-duration="1200">
+                        <p>I have a reputation for making data approachable and creating applications with a focus on usability. I am well organized, eager, and hard working with excellent communication skills and knack for quickly grasping new concepts and software. As both a programmer and manager, I have a proven track record of completing diverse projects quickly and efficiently.</p>
+                        <p>..or that's what it says on my resume. I'm a huge nerd. I like doing things once rather than twice, grilling on sunny days, and hanging with my dog. </p>
+                    </div>
+                </div>
+            </section>
+            <section class="skills">
+                <div class="heading sticky bg-black">
+                    <h2 class="skills-heading" data-aos="fade" data-aos-duration="400">SKILLS</h2>
+                    <div class="bg-accent divider-hor"></div>
+                </div>
+                <div class="panel skill skill-wrapper">
+                    <div class="skill-mode">
+                        <div class="skill-mode-wrapper">
+                            <h3 class="skill-heading">Tech</h3>
+                            <ul id="tech">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-accent divider-vert"></div>
+                    <div class="skill-mode">
+                        <div class="skill-mode-wrapper">
+                            <h3 class="skill-heading">API<small>s</small></h3>
+                            <ul id="api">
+                            </ul>
+                            <h3 class="skill-heading">Other</h3>
+                            <ul id="other">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="next">
+                <div class="heading sticky">
+                    <h2 class="next-heading" data-aos="fade" data-aos-duration="400">Data</h2>
+                    <div class="bg-accent divider-hor-mini"></div>
+                </div>
+                <div class="next-content">
+                    <div class="js_item" id="trigger-one"></div>
+                    <div class="js_item" id="trigger-two"></div>
+                    <div class="js_item" id="trigger-three"></div>
+                    <div class="js_item" id="trigger-four"></div>
+                </div>
+                <div class="js_next contain" data-aos-duration="300" data-aos="fade" data-aos-anchor="#trigger-one" data-aos-anchor-placement="top-top" aos-easing="ease-out">
+                    <div class="item-wrap">
+                        <h3 class="next-details-title">Hopkins Distribution Sales Reporting Suite</h3>
+                        <div class="details-content">
+                            <p>
+                                Data visualization, custom reporting, and business intelligence for 12 client presses. This gave each press the ability to analyze transactional data, create ad hoc reporting, and forecast future sales and stock needs. It resulted in a significant decrease in workload and improved data access for the presses. Built using Filemaker, custom SQL statements, Highcharts and a lil razzle dazzle.
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-network-wired"></i>
+                                <div class="info-label">Schema</div>
+                            </div>
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-chart-area"></i>
+                                <div class="info-label">Charts</div>
+                            </div>
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-database"></i>
+                                <div class="info-label">Queries</div>
+                            </div>
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-pencil-ruler"></i>
+                                <div class="info-label">Design</div>
+                            </div>
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-user-friends"></i>
+                                <div class="info-label">Training</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="js_next contain" data-aos-duration="600" data-aos="fade-up" data-aos-anchor="#trigger-two" data-aos-anchor-placement="top-top" aos-easing="ease-out">
+                    <div class="item-wrap">
+                        <h3 class="next-details-title">Gratis Request App</h3>
+                        <div class="details-content">
+                            <p>
+                                This app worked with the disparate systems of 12 client presses and simplified the process of requesting contractually obligated gratis books. Built using Filemaker. It integrated data from various versions of AllBooks and allowed upload to our distribution software, Bookmaster. It resulted in a savings of over 3,500 hours of labor per year for Johns Hopkins Press.
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <div class="info-wrapper flex">
+                                <i class="info info-icon fas fa-vote-yea"></i>
+                                <div class="info-label">Validation</div>
+                            </div>
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-pencil-ruler"></i>
+                                <div class="info-label">Design</div>
+                            </div>
+                            <div class="info-wrapper flex">
+                                <i class="info info-icon fas fa-random"></i>
+                                <div class="info-label">Data Transformation</div>
+                            </div>
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-user-friends"></i>
+                                <div class="info-label">Training</div>
+                            </div>
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-user-clock"></i>
+                                <div class="info-label">Time Saver</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="js_next contain" data-aos-duration="600" data-aos="fade-up" data-aos-anchor="#trigger-three" data-aos-anchor-placement="top-top" aos-easing="ease-out">
+                    <div class="item-wrap">
+                        <h3 class="next-details-title">NAXchange Impact Report Module</h3>
+                        <div class="details-content">
+                            <p>
+                                Using internal data and data collected from Altmetrics, Scopus, Web of Science, and MailChimp this module will allow users to quickly produce, edit, and create multipage PDF summaries of the impact of a various reports. Really, the easiest way to understand is to just see the end result<a class="highlight" href="https://cordelliay.github.io/img/Impact.pdf" target="_blank">here.</a> Built using PHP, Twig, Slim, lil AJAX, some really intense SQL queries, and several APIs.</p>
+                        </div>
+                        <div class="flex">
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-chart-area"></i>
+                                <div class="info-label">Charts</div>
+                            </div>
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-database"></i>
+                                <div class="info-label">Queries</div>
+                            </div>
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-code"></i>
+                                <div class="info-label">FE/BE</div>
+                            </div>
+                            <div class="info-wrapper flex">
+                                <i class="info-icon info fas fa-cog"></i>
+                                <div class="info-label">APIs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="panel bg-accent web" data-aos-duration="600" data-aos="fade-up">
+                <div class="contain flex">
+                    <h2 class="heading sticky bg-accent post_circ"><span data-aos="fade" data-aos-duration="400">Web</span><span data-aos="fade" data-aos-duration="400" class="hide">Sites</span></h2>
+                    <div class="additional_content interior">
+                        <div class="details">
+                            <h3 data-aos="fade" data-aos-duration="500">Johns Hopkins University Press | HFS Distribution
+                            </h3>
+                            <p>
+                                Made it go from <a class="highlight" href="#">this</a> to <a class="highlight" href="http://hfs.jhu.edu">this</a>. Basic bootstrap--nothing fancy but a huge improvement. </p>
+                        </div>
+                        <div class="details">
+                            <h3 data-aos="fade" data-aos-duration="500">National Academies Press</h3>
+                            <p>
+                                This is an iterative <a class="highlight" href="https://www.nap.edu/">website</a>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh,
+                                viverra non, semper suscipit, posuere a, pede. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="panel data">
+                <div class="contain flex">
+                    <div class="circle">
+                        <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="25" stroke="transparent" fill="var(--accent-color)" />
+                        </svg>
+                    </div>
+                    <div class="desc">
+                        <p>Currently, instead of writing all the code, I'm working as QA manager at Fastpot--which is just a wonderful group of highly talented people and dig really deep into the world of accessibility. I love working with such a talented Product Team. We may have gotten some accolades for the work we did: <a href="https://www.webbyawards.com/winners/2019/websites/general-websites/school-university/" class="highlight">2019 Webby Winner </a> for Website: School or University.</p>
+                        <p>Plus I've done some real exciting presentations on<a class="highlight" href="https://docs.google.com/presentation/d/1cnmtYml_TRwcp09LOAAhfAvB59SXP_VDUxBNNjo_GcY/edit?usp=sharing">Accessiblity</a> and <a class="highlight" href="https://docs.google.com/presentation/d/1cy0f_irVYC9zcKucv2qABbm4mDQ6b6flzaNHv8YS7l4/edit?usp=sharing">Quality Assurance.</a></p>
+                    </div>
+                    <h2 class="center overflow" data-aos="fade" data-aos-duration="400">QA</h2>
+                </div>
+            </section>
+            <section class="panel bg-main-feature-color">
+                <div class="contact-wrap contain">
+                    <h2><span class="bg-main-feature-color">SAY HI!</span></h2>
+                    <div class="border" id='formview'>
+                        <form class="pad" method="POST" action="http://formspree.io/cordelliay@hotmail.com" data-aos="fade" data-aos-duration="400">
+                            <input type="text" name="email" class="question" id="email" required autocomplete="off" />
+                            <label for="email"><span class="q">What's your email?</span></label>
+                            <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+                            <label for="msg" class="q"><span>What's your message?</span></label>
+                            <button class="bg-black" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
-    <div class="dark">
-        <div class="contain flex">
-            <h2 class="side-1">ABOUT</h2>
-            <p class="side-2"> I'm a fullstack web developer with a background in publishing. I have worked just about every aspect of book sales--from managing a bookstore to warehouse distribution to building the tools that drive the industry. I've been incredibly lucky to have amazing mentors and opportunities to learn a diverse skill set. I'm currently a <span class="highlight toolgif" data-toolgif-url="https://media.giphy.com/media/13HBDT4QSTpveU/giphy.gif">Web Programmer</span> and <span class="toolgif highlight" data-toolgif-url="https://media0.giphy.com/media/rIq6ASPIqo2k0/giphy.gif">Database Enginneer</span> at the National Academies of Sciences, Engineering, and Medicine. If that wasn't enough of a mouthful, I work in the <a href="https://www.nap.edu" class="highlight">The National Academies Press</a> division.</p>
-        </div>
-    </div>
-    <div class="skills">
-        <h2>SKILLS</h2>
-    </div>
-    <div class="flex skill">
-        <div class="mode1">
-            <h3>Tech</h3>
-            <ul id="tech">
-            </ul>
-        </div>
-        <div id="draw" class="svg-animation">
-            <svg version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="400px" xml:space="preserve">
-                <path class="path-vert" fill="#01a09e" stroke-width="20" stroke="#c13d2e" d="M30 0 v600 400" />
-            </svg>
-        </div>
-        <div class="mode2">
-            <h3>API<small>s</small></h3>
-            <ul id="api">
-            </ul>
-            <h3>Other</h3>
-            <ul id="other">
-            </ul>
-        </div>
-    </div>
-    <div class="next">
-        <div class="contain">
-            <h2>App<span class="hide">lication</span>s</h2>
-            <div class="apps">
-                <div class="details">
-                    <h3 class="title">HFS Reporting Suite</h3>
-                    <p><span class="upper">Work:</span>Schema, UI/UX Design, Implementation, Training</p>
-                    <p>
-                        Data visualization, custom reporting, and <span class="highlight toolgif" data-toolgif-url="img/page1.gif">business intelligence</span> for 12 client presses. This gave each press the ability to create ad hoc reporting rather than requesting data from HFS. It resulted in a significant decrease in workload for HFS and improved data access for the presses.
-                    </p>
-                </div>
-                <div class="details">
-                    <h3 class="title">Gratis Request App</h3>
-                    <p><span class="upper">Work:</span> Concept, UI/UX Design, Schema, Integration, Implementation, </p>
-                    <p>
-                        This app worked with the disparate systems of 12 client presses and simplified the process of requestin contractually obligated gratis books. It resulted in a savings of over <span class="highlight toolgif" data-toolgif-url="https://media2.giphy.com/media/3ohhwiSbK4IdpTIB0Y/giphy.gif">3,500 hours</span> of labor per year.
-                    </p>
-                </div>
-                <div class="details">
-                    <h3 class="title">NAXchange Impact Report Module</h3>
-                    <p><span class="upper">Work:</span> In Progress</p>
-                    <p>
-                        Using internal data and data collected from Altmetrics, Scopus, Web of Science, and MailChimp this module will allow users to quickly produce one page summaries of the <a href="https://codepen.io/cordellia/pen/eGeMgz" class="highlight">impact</a> of a given report.</p>
-                </div>
-                <div class="details">
-                    <h3 class="title">HFS Website</span></h3>
-                    <p><span class="upper">Work:</span> Concept, Design, Implementation</p>
-                    <p>
-                        Made it go from <a class="highlight" href="#">this</a> to <a class="highlight" href="http://hfs.jhu.edu">this</a>. Basic bootstrap--nothing fancy but a huge improvement. </p>
-                </div>
-                <div class="details">
-                    <h3>National Academies Press Website</h3>
-                    <p><span class="upper">Work:</span> Maintenance, Updates, SEO</p>
-                    <p>
-                        This is an iterative <a class="highlight" href="https://www.nap.edu/">website</a>. I’ve worked on a redesign of the authors page and added some new features in search, citations, and the new initiatives pages. Transitioned to Google Tag Manager. Most of my work has been focused on fixing bugs, refactoring code, and updating the way resources are stored. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="data">
-        <div class="contain flex">
-            <div class="circle">
-                <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="25" cy="25" r="25" stroke="transparent" fill="#c13d2e" />
-                </svg>
-            </div>
-            <div class="desc">
-                <p>I'm a total nerd about databases. If you want to see my head <span class="toolgif highlight">explode</span>, tell me that you are using a spreadsheet to track complex data. I get it; spreadsheets are so easy but....we can do better!</p>
-                <p>
-                    I have a proven history of making data accessible, fast, and accurate. My duties have ranged from schema design, extracting, loading, transforming, analyzing to visualizing the data. Additionally, I have worked on code optimization for AllBooks (a metadata management system for academic publishers). </p>
-                <p>
-                    At <a href="https://en.wikipedia.org/wiki/National_Academies_of_Sciences,_Engineering,_and_Medicine" class="highlight">NASEM</a>, I am responsible for the management of the internal MySQL database as well as updating our API.
-                </p>
-            </div>
-            <h2>DATA</h2>
-        </div>
-    </div>
-    <div class="dark">
-        <div class="contain flex">
-            <h2 class="side-1">SAY HI!</h2>
-            <div id='formview'>
-                <form method="POST" action="http://formspree.io/cordelliay@hotmail.com">
-                    <input type="email" name="email" placeholder="Your email" />
-                    <textarea name="message" placeholder="Your message"></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.79/jquery.form-validator.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="js/toolgif.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js?19"></script>
 </body>
 
 </html>

@@ -96,6 +96,12 @@ section {
 .bg-accent {
     background: var(--accent-color);
 }
+.feature .bg-accent {
+    background: #fa255e;
+}
+.feature-circle1, .feature-circle2{
+    fill: #fa255e;
+}
 
 .bg-accent-2 {
     background: var(--accent-color-2);
@@ -253,7 +259,7 @@ section {
 
 .feature-circle1>svg>circle,
 .feature-circle2>svg>circle {
-    fill: var(--accent-color);
+    fill: #fa255e;
 }
 
 

@@ -1,8 +1,5 @@
 AOS.init();
 $(function() {
-
-    $(".toolgif").toolgif();
-
 var skills = [];
 var tech = ['#tech', ["MySQL", "PHP", "CSS3", "HTML5", "XML", "JSON", "JQuery", "Javascript", "Propel ORM", "SASS / SCSS", "AngularJS", "Twig", "Slim Framework", "Bootstrap", "Foundation"]];
 var api = ['#api', ["Altmetrics", "Scopus", "MailChimp", "Asana", "YouTube", "Google Analytics", "Highcharts"]];

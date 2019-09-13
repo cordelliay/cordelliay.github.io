@@ -487,8 +487,6 @@ section {
     text-transform: uppercase;
 }
 
-
-
 .data .contain {
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
@@ -519,10 +517,6 @@ section {
 .desc {
     padding: 2em;
 }
-
-
-
-
 
 .overflow {
     overflow: hidden;
@@ -555,8 +549,6 @@ li {
     padding-bottom: 1rem;
 }
 
-
-
 .giant {
     flex-basis: 100%;
 }
@@ -565,7 +557,7 @@ li {
     color: var(--main-bg-color);
 }
 
-/*@-webkit-keyframes draw1 {
+@-webkit-keyframes draw1 {
     from {
         stroke-dashoffset: 1200;
     }
@@ -623,18 +615,11 @@ li {
     100% {
         height: 100%;
     }
-}*/
+}
 
 
 #formview {
     margin-top: -3rem;
-    /*    margin: 15% 0;
-    flex: 2;
-    flex-basis: auto;
-    min-height: 32vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;*/
 }
 
 .pad {

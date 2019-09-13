@@ -11,6 +11,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600,900');
 @import url('https://fonts.googleapis.com/css?family=Linden+Hill');
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:400,700,900&display=swap');
 
 @font-face {
     font-family: 'Battling';
@@ -450,7 +451,6 @@ section {
 
 
 .next-details-title {
-    padding-top: 20vh;
     background: var(--accent-color-2);
     position: sticky;
 }
@@ -474,7 +474,8 @@ section {
     margin-left: -20px;
 }
 .item-wrap {
-    padding: 1em;
+    padding: 20vh 1em 0 1em;
+
 }
 
 .content {

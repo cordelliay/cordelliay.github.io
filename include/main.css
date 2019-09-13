@@ -654,7 +654,12 @@ li {
     position: relative;
 }
 
-
+.giant{
+    flex-basis: 100%;
+}
+.giant a{
+    color: var(--main-bg-color);
+}
 
 @-webkit-keyframes draw1 {
     from {

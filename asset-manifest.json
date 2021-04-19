@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5076b200.chunk.css",
+    "main.js": "/static/js/main.fde2ffbc.chunk.js",
+    "main.js.map": "/static/js/main.fde2ffbc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a5ca9d6c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a5ca9d6c.js.map",
+    "static/js/2.be461b7b.chunk.js": "/static/js/2.be461b7b.chunk.js",
+    "static/js/2.be461b7b.chunk.js.map": "/static/js/2.be461b7b.chunk.js.map",
+    "static/js/3.b71bbcac.chunk.js": "/static/js/3.b71bbcac.chunk.js",
+    "static/js/3.b71bbcac.chunk.js.map": "/static/js/3.b71bbcac.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.5076b200.chunk.css.map": "/static/css/main.5076b200.chunk.css.map",
+    "static/js/2.be461b7b.chunk.js.LICENSE.txt": "/static/js/2.be461b7b.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/Battling1NPmed.d97cc572.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5ca9d6c.js",
+    "static/js/2.be461b7b.chunk.js",
+    "static/css/main.5076b200.chunk.css",
+    "static/js/main.fde2ffbc.chunk.js"
+  ]
+}

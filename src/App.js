@@ -65,7 +65,7 @@ const AboutMe = () => {
             <div className="bg-black divider-vert-detached"></div>
             <div className="about-contents contain">
                 <h3>Hi.👋<br />My name is Cordellia!</h3>
-                <p>I have a reputation for creating applications with a focus on usability, and accessibility. I am well organized, eager, and hard working with excellent communication skills and knack for quickly grasping new concepts and software. As both a programmer and manager, I have a proven track record of completing diverse projects quickly and efficiently.</p>
+                <p>I have a reputation for creating applications with a focus on usability, and accessibility. I am well organized and hard working with excellent communication skills and knack for quickly grasping new concepts and software. As both a programmer and manager, I have a proven track record of completing diverse projects quickly and efficiently.</p>
                 <p>..or that's what it says on my resume. I'm a huge nerd. I like doing things once rather than twice, grilling on sunny days, and hanging with my dog. </p>
             </div>
         </div>

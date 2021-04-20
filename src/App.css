@@ -209,7 +209,7 @@ section {
 .feature-grid {
     margin: 5px auto 5px auto;
     padding: 5vh;
-    height: 80vh;
+    height: 90vh;
     min-height: 600px;
     width: 45vw;
     display: -ms-grid;

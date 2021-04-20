@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import axios from "axios";
+import ReactHtmlParser from "react-html-parser";
 
 const Main = () => {
   return (
@@ -35,11 +36,11 @@ const Details = () => {
       icon: 'fas fa-map-marker-alt',
       value: 'Baltimore, MD',
     }, 
-    {
-      name: 'Job',
-      icon: 'fas fa-briefcase',
-      value: 'Technical Lead & QA Manager',
-    },
+    // {
+    //   name: 'Job',
+    //   icon: 'fas fa-briefcase',
+    //   value: 'Technical Lead & QA Manager',
+    // },
   ];
   return(
     detail.map((detail, index) =>
@@ -131,8 +132,61 @@ const Skills = () => {
 
 const WorkHistory = [
   {
+    name: 'Impact Report Generator',
+    job: 'National Academies of Sciences, Engineering, and Medicine',
+    type: 'Web Application',
+    note: 'Using internal data and data collected from Altmetrics, Scopus, Web of Science, and MailChimp this module will allow users to quickly produce, edit, and create multipage PDF summaries of the impact of a various reports. Really, the easiest way to understand is to just see the end result <a class="highlight" href="https://drive.google.com/file/d/1x2lEhkZ1FseTiDvZ1fUoknIx0GDV6ssm/view" target="_blank">a styled PDF.</a> This complex report took about 20 seconds for a user to generate and allowed inline customization. Built using PHP, Twig, Slim, lil AJAX, some really intense data queries, and several APIs.',
+    work: [
+      {
+      icon: 'fas fa-code',
+      type: 'Full stack',
+      },
+      {
+        icon: 'fas fa-chart-area',
+        type: 'Charts',
+      },
+      {
+        icon: 'fas fa-database',
+        type: 'Data',
+      },
+      {
+        icon: 'fas fa-cog',
+        type: 'APIs',
+      },
+      {
+        icon: 'fa-user-clock',
+        type: 'Time Saver',
+      },
+    ]
+  },
+  {
+    name: 'National Academies Press Website',
+    job: 'National Academies of Sciences, Engineering, and Medicine',
+    type: 'Website',
+    note: 'I made extensive changes and functional improvements to this iterative <a class="highlight" href="https://www.nap.edu/"> website.</a> It serves over 2 million users/ 3 million session a month. I worked on many features including: segmented searching, division and initiatives, and revitalizing analytics (switching to Google Tag Manager).',
+    work: [
+      {
+      icon: 'fas fa-code',
+      type: 'Full stack',
+      },
+      {
+        icon: 'fas fa-chart-area',
+        type: 'Analytics',
+      },
+      {
+        icon: 'fas fa-database',
+        type: 'Data',
+      },
+      {
+        icon: 'fas fa-cog',
+        type: 'APIs',
+      },
+    ]
+  },
+  {
     name: 'Sales Metric & Analysis Reporting',
-    type: 'Desktop Application for Johns Hopkins University Press',
+    job: 'Johns Hopkins University Press',
+    type: 'Desktop Application',
     note: 'Data visualization, custom reporting, and business intelligence for 12 client presses. This gave each press the ability to analyze transactional data, create ad hoc reporting, and forecast future sales and stock needs. It resulted in a significant decrease in workload and improved data access for the presses. Built using Filemaker, custom SQL statements, Highcharts and a lil razzle dazzle.',
     work: [
       {
@@ -158,8 +212,9 @@ const WorkHistory = [
     ]
   },
   {
-    name: 'Sales Metric & Analysis Reporting',
-    type: 'Bulk Shipping Requests',
+    name: 'Bulk Shipping Requests',
+    job: 'Johns Hopkins University Press',
+    type: 'Desktop Application',
     note: 'This app worked with the disparate systems of 12 client presses and simplified the process of requesting contractually obligated gratis books. Built using Filemaker. It integrated data from various versions of AllBooks and allowed upload to our distribution software, Bookmaster. Validated addresses, checked for potentional duplicate requests. It resulted in a savings of over 3,500 hours of labor per year for Johns Hopkins Press.',
     work: [
       {
@@ -184,6 +239,51 @@ const WorkHistory = [
       },
     ]
   },
+  {
+    name: 'Exhibition Point of Sale System',
+    job: 'Johns Hopkins University Press',
+    type: 'Mobile Application',
+    note: 'Application for offline sales at exhibitions and events. Allowed users to scan barcodes, track sales, calculate discounts, gather contact information, and generate emailed reciepts when the user regained wifi access. Built using Filemaker.',
+    work: [
+      {
+      icon: 'fas fa-vote-yea',
+      type: 'Validation',
+      },
+      {
+        icon: 'fas fa-upload',
+        type: 'Data Import',
+      },
+      {
+        icon: 'fas fa-network-wired',
+        type: 'Schema',
+      },
+      {
+        icon: 'fas fa-pencil-ruler',
+        type: 'Design',
+      },
+      {
+        icon: 'fas fa-user-friends',
+        type: 'Training',
+      },
+    ]
+  },
+  {
+    name: 'Hopkins Fulfillment Services Website',
+    job: 'Johns Hopkins University Press',
+    type: 'Website',
+    note: 'A responsive website built on Bootstrap. Nothing fancy but a massive improvement over what they previously had.',
+    work: [
+      {
+        icon: 'fas fa-pencil-ruler',
+        type: 'Design',
+      },
+      {
+        icon: 'fas fa-code',
+        type: 'Front End development',
+      },
+    ]
+  },
+
 ]
 
 const WorkItem = () => {
@@ -191,10 +291,12 @@ const WorkItem = () => {
     WorkHistory.map((works, index) =>
     <div className="details contain" key={index}>
       <div className="item-wrap">
-          <h3 className="next-details-title">{works.type}</h3>
-          <span className="job">{works.name}</span>
+          <h3 className="next-details-title">{works.name}</h3>
+          <span className="job">{works.type} for {works.job}</span>
           <div className="details-content">
-              <p>{works.note}</p>
+              <p>
+              {ReactHtmlParser(works.note)}
+              </p>
           </div>
           <div className="flex">
             {works.work.map((w, index) => <WorkType key={index} icon={w.icon} type={w.type} />)}
@@ -280,7 +382,7 @@ const Contact = () => {
                     </form>
                     <div role="alert" aria-live="assertive">
                       {serverState.status && (
-                        <p className={!serverState.status.ok ? "errorMsg" : ""}> Sorry!  
+                        <p className={!serverState.status.ok ? "errorMsg" : ""}> 
                           {serverState.status.msg}
                         </p>
                       )}
@@ -315,9 +417,9 @@ const More = () => {
         </div>
         <h2 className="center overflow" id="more">More</h2>
         <div className="desc">
-            <p>Currently, instead of writing all the code, I'm working as QA manager at Fastpot--which is just a wonderful group of highly talented people. I love working with such a talented Product Team. We may have gotten some accolades for the work we did: <a href="https://www.webbyawards.com/winners/2019/websites/general-websites/school-university/" className="highlight">2019 Webby Winner </a> for Website: School or University.</p>
-            <p>It has also given me the chance to focus on ensuring complex designs are accessible and meet WCAG 2.1 AA and AAA standards. Accessibility is about inclusion and providing the end user a great experience regardless of whether they use adaptive technolgies.</p>
-            <p>Plus I've done some presentations on <a className="highlight" href="https://cordelliay.github.io/img/Accessible%20Patterns.pdf">Accessiblity</a> and <a className="highlight" href="https://cordelliay.github.io/img/Quality%20Assurance.pdf">Quality Assurance.</a></p>
+            <p>Whether writing code or reviewing it, I offer real accessible solutions to complex designs.  I specialize in helping designers identify accessible patterns and giving developers markup recommendations before the build. Accessibility audits are easy to do but sharing how to avoid errors and fix issues in the code is much more valuable than a list of violations.</p>
+            <p>Accessible doesn’t have to mean ugly! At Fastspot,  I got to work on some award-winning websites, including <a href="https://www.webbyawards.com/winners/2019/websites/general-websites/school-university/" className="highlight">2019 Webby Winner </a> for School / University: MICA <a href="https://winners.webbyawards.com/2020/websites/general-websites/schooluniversity/120845/yale-college" className="highlight">2020 Webby People’s Voice Award</a> for School / University: Yale College that meets WCAG 2.0 AA compliance. </p>
+            <p>Plus I've done some presentations on <a className="highlight" href="https://drive.google.com/file/d/1fDOGla3COXnufEWoAUVJ4_anW13bO1kr/view?usp=sharing">Accessibility</a> and <a className="highlight" href="https://drive.google.com/file/d/1ZZEVC8rFu9PsJR5e3DFWMrvq41jJqTbk/view?usp=sharing">Quality Assurance.</a></p>
         </div>
       </div>
     </section>

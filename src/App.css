@@ -175,8 +175,8 @@ section {
     margin: 5px;
     border: 4px solid var(--main-feature-color);
     border-radius: 50px;
-    padding: 10px;
-    height: 50px;
+    padding: 0 10px;
+    height: 25px;
     line-height: 50px;
     text-align: center;
 }
@@ -452,6 +452,7 @@ section {
     text-align: left;
     background: var(--main-feature-color);
     z-index: 0;
+    padding-bottom: 60px;
 }
 
 
